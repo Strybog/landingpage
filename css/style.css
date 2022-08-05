@@ -1,0 +1,259 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*general*/
+body {
+  font-family: 'Arapey', serif;
+  font-style: normal;
+  font-weight: 400;
+}
+p {
+  font-family: 'Verdana', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+}
+a {
+  font-size: 30px;
+  text-transform: uppercase;
+  border-radius: 10px;
+  padding: 24px 50px;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.home {
+  width: 100%;
+  margin: 50px auto;
+}
+
+h1 {
+  color: #9db0d1;
+  font-size: 60px;
+  font-family: 'Arapey', serif;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.about{
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.header-button {
+  display: block;
+  margin: 0 auto;
+  color: #FFFFFF;
+  background-color: #EBAC87;
+  max-width: 267px;
+}
+
+.info {
+  margin-top: 50px;
+  margin-bottom: 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  column-gap: 20px;
+}
+
+.box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.box .bullet {
+  width: 60px;
+  height: 60px;
+  background: #9DB0D1;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.caption {
+  background: url(../img/bg-cloud.png) repeat-x top / auto 200px, 
+    linear-gradient(180deg, rgba(135, 198, 235, 0) 8.33%, #87C6EB 93.06%);
+  padding: 250px 120px 50px;
+  font-size: 40px;
+  line-height: 44px;
+  text-align: center;
+}
+
+.content{
+  background: #87C6EB;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sub-title {
+  width: 350px;
+  height: 560px;
+  border-radius: 10px;
+  background: #FFFFFF;
+  padding: 20px;
+}
+
+.sub-title .form {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: rgba(235, 172, 135, 0.4);
+  color: #FFFFFF;
+  font-family: 'Verdana';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  }
+
+.sub-title img {
+  width:100%;
+  height: 310px;
+  background: #EBAC87;
+}
+
+.sub-title p {
+  text-align: left;
+}
+
+.area {
+  background: url(../img/bg-mountain.png) no-repeat right bottom / auto 475px,  #87C6EB;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: 54px;
+
+}
+
+.area-text {
+  width: 600px;
+}
+
+.area-text h2 {
+  font-size: 40px;
+  line-height: 44px;
+  color: #FFFFFF;
+  text-align: left;
+  margin-top: 75px;
+  margin-bottom: 50px;
+}
+
+.area-text .area-button {
+  display: block;
+  color: #EBAC87 ;
+  background-color: #FFFFFF;
+  max-width: 220px;
+  margin-top: 50px;
+}
+
+.area-form {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #EBAC87;
+  color: #FFFFFF;
+  font-family: 'Verdana';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 73px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  margin-top: 74px;
+  margin-bottom: 50px;
+}
+
+.bottom-section{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-button {
+  display: block;
+  color: #FFFFFF;
+  background-color: #EBAC87;
+  max-width: 267px;
+}
+
+.socials a{
+  padding: 0;
+}
+
+.icon {
+  margin: 0 15px;
+}
+ 
