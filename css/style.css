@@ -52,15 +52,19 @@ table {
 }
 
 /*general*/
+body {
+  font-family: 'Arapey', serif;
+  font-style: normal;
+  font-weight: 400;
+}
 p {
-  font-family: 'Verdana';
+  font-family: 'Verdana', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
 }
 a {
-  font-family: 'Arapey';
   font-size: 30px;
   text-transform: uppercase;
   border-radius: 10px;
@@ -68,15 +72,25 @@ a {
   text-decoration: none;
 }
 
-header {
-  padding: 0 120px;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.home {
+  width: 100%;
+  margin: 50px auto;
+}
+
+.home-item {
+  display: flex;
+  justify-content: center;
 }
 
 h1 {
   color: #9db0d1;
   font-size: 60px;
   font-family: 'Arapey', serif;
-  margin-top: 100px;
   margin-bottom: 50px;
   text-align: center;
 }
@@ -87,20 +101,21 @@ h1 {
 }
 
 .header-button {
-  display: block;
   margin: 0 auto;
   color: #FFFFFF;
   background-color: #EBAC87;
-  max-width: 267px;
+  
 }
 
-
-.container {
+.info {
   margin-top: 50px;
   margin-bottom: 48px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  column-gap: 20px;
 }
 
 .box {
@@ -124,9 +139,6 @@ h1 {
   background: url(../img/bg-cloud.png) repeat-x top / auto 200px, 
     linear-gradient(180deg, rgba(135, 198, 235, 0) 8.33%, #87C6EB 93.06%);
   padding: 250px 120px 50px;
-  font-family: 'Arapey';
-  font-style: normal;
-  font-weight: 400;
   font-size: 40px;
   line-height: 44px;
   text-align: center;
@@ -134,8 +146,8 @@ h1 {
 
 .content{
   background: #87C6EB;
-  padding: 0 120px;
 }
+
 .title {
   display: flex;
   justify-content: space-between;
@@ -171,6 +183,7 @@ h1 {
   width:100%;
   height: 310px;
   background: #EBAC87;
+  margin-bottom: 20px;
 }
 
 .sub-title p {
@@ -179,21 +192,23 @@ h1 {
 
 .area {
   background: url(../img/bg-mountain.png) no-repeat right bottom / auto 475px,  #87C6EB;
+}
+
+.area-item {
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: s;
   align-items: flex-end;
   padding-bottom: 54px;
-
 }
 
 .area-text {
-  width: 600px;
+  display: flex;
+  flex-direction: column;
+  
 }
 
 .area-text h2 {
-  font-family: 'Arapey';
-  font-style: normal;
-  font-weight: 400;
   font-size: 40px;
   line-height: 44px;
   color: #FFFFFF;
@@ -202,15 +217,23 @@ h1 {
   margin-bottom: 50px;
 }
 
-.area-text .area-button {
-  display: block;
+.area-class {
+  display: flex;
+}
+
+.area-button {
   color: #EBAC87 ;
   background-color: #FFFFFF;
-  max-width: 220px;
   margin-top: 50px;
 }
 
 .area-form {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.item {
   width: 80px;
   height: 80px;
   border-radius: 50%;
@@ -227,19 +250,23 @@ h1 {
 }
 
 footer {
-  padding: 0 120px;
   margin-top: 74px;
   margin-bottom: 50px;
+}
+
+.bottom-section{
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .footer-button {
-  display: block;
   color: #FFFFFF;
   background-color: #EBAC87;
-  max-width: 267px;
+}
+
+.socials a{
+  padding: 0;
 }
 
 .icon {
